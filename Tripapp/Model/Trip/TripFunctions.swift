@@ -13,11 +13,19 @@ class TripFunctions {
         
     }
     
-    static func readTrip() {
-        if Data.tripModels.count == 0 {
-            Data.tripModels.append(TripModel(title: "Trip To Dahab"))
-            Data.tripModels.append(TripModel(title: "Trip To Dubai"))
-            Data.tripModels.append(TripModel(title: "Trip To London"))
+    static func readTrip(completion: @escaping () -> ()) {
+        // this thread has a highest priority
+        // get the data in the BG thread 
+        DispatchQueue.global(qos: .userInteractive).async {
+            if Data.tripModels.count == 0 {
+                Data.tripModels.append(TripModel(title: "Trip To Dahab"))
+                Data.tripModels.append(TripModel(title: "Trip To Dubai"))
+                Data.tripModels.append(TripModel(title: "Trip To London"))
+            }
+        }
+        
+        DispatchQueue.main.async {
+            completion()
         }
     }
     
