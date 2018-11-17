@@ -15,8 +15,8 @@ class TripFunctions {
     
     static func readTrip(completion: @escaping () -> ()) {
         // this thread has a highest priority
-        // get the data in the BG thread 
-        DispatchQueue.global(qos: .userInteractive).async {
+        // get the data in the BG thread
+        DispatchQueue.global(qos: .userInitiated).async {
             if Data.tripModels.count == 0 {
                 Data.tripModels.append(TripModel(title: "Trip To Dahab"))
                 Data.tripModels.append(TripModel(title: "Trip To Dubai"))
