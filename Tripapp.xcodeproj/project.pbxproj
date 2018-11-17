@@ -14,6 +14,7 @@
 		F4005B56219B60CA000F9D58 /* TripappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4005B55219B60CA000F9D58 /* TripappUITests.swift */; };
 		F49385E221A036CD0059CC61 /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49385E121A036CD0059CC61 /* TripModel.swift */; };
 		F49385E421A036D90059CC61 /* TripFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49385E321A036D90059CC61 /* TripFunctions.swift */; };
+		F49385E621A040FA0059CC61 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49385E521A040FA0059CC61 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F4005B57219B60CA000F9D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F49385E121A036CD0059CC61 /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
 		F49385E321A036D90059CC61 /* TripFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFunctions.swift; sourceTree = "<group>"; };
+		F49385E521A040FA0059CC61 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		F49385DF21A036A60059CC61 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F49385E521A040FA0059CC61 /* Data.swift */,
 				F49385E021A036AF0059CC61 /* Trip */,
 			);
 			path = Model;
@@ -274,6 +277,7 @@
 				F49385E221A036CD0059CC61 /* TripModel.swift in Sources */,
 				F4005B36219B60C8000F9D58 /* AppDelegate.swift in Sources */,
 				F49385E421A036D90059CC61 /* TripFunctions.swift in Sources */,
+				F49385E621A040FA0059CC61 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
