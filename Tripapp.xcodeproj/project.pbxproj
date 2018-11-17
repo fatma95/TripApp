@@ -12,6 +12,8 @@
 		F4005B40219B60CA000F9D58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4005B3E219B60CA000F9D58 /* LaunchScreen.storyboard */; };
 		F4005B4B219B60CA000F9D58 /* TripappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4005B4A219B60CA000F9D58 /* TripappTests.swift */; };
 		F4005B56219B60CA000F9D58 /* TripappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4005B55219B60CA000F9D58 /* TripappUITests.swift */; };
+		F49385E221A036CD0059CC61 /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49385E121A036CD0059CC61 /* TripModel.swift */; };
+		F49385E421A036D90059CC61 /* TripFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49385E321A036D90059CC61 /* TripFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		F4005B51219B60CA000F9D58 /* TripappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4005B55219B60CA000F9D58 /* TripappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripappUITests.swift; sourceTree = "<group>"; };
 		F4005B57219B60CA000F9D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F49385E121A036CD0059CC61 /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
+		F49385E321A036D90059CC61 /* TripFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 		F4005B34219B60C8000F9D58 /* Tripapp */ = {
 			isa = PBXGroup;
 			children = (
+				F49385DF21A036A60059CC61 /* Model */,
 				F4005B35219B60C8000F9D58 /* AppDelegate.swift */,
 				F4005B3C219B60CA000F9D58 /* Assets.xcassets */,
 				F4005B3E219B60CA000F9D58 /* LaunchScreen.storyboard */,
@@ -117,6 +122,23 @@
 				F4005B57219B60CA000F9D58 /* Info.plist */,
 			);
 			path = TripappUITests;
+			sourceTree = "<group>";
+		};
+		F49385DF21A036A60059CC61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F49385E021A036AF0059CC61 /* Trip */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F49385E021A036AF0059CC61 /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				F49385E121A036CD0059CC61 /* TripModel.swift */,
+				F49385E321A036D90059CC61 /* TripFunctions.swift */,
+			);
+			path = Trip;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,7 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F49385E221A036CD0059CC61 /* TripModel.swift in Sources */,
 				F4005B36219B60C8000F9D58 /* AppDelegate.swift in Sources */,
+				F49385E421A036D90059CC61 /* TripFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
